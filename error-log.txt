@@ -1,0 +1,14 @@
+[2025-05-15T16:03:07.878066600] EXCEPTION: Database access failure for item ID: fail
+	at se.kth.iv1350.integration.InventoryManagement.fetchItem(InventoryManagement.java:27)
+	at se.kth.iv1350.controller.Controller.registerItem(Controller.java:42)
+	at se.kth.iv1350.view.View.registerItem(View.java:57)
+	at se.kth.iv1350.view.View.simulateSale(View.java:38)
+	at se.kth.iv1350.startup.Main.main(Main.java:27)
+
+[2025-05-15T16:18:49.214639300] EXCEPTION: Database access failure for item ID: fail
+	at se.kth.iv1350.integration.InventoryManagement.fetchItem(InventoryManagement.java:27)
+	at se.kth.iv1350.controller.Controller.registerItem(Controller.java:42)
+	at se.kth.iv1350.view.View.registerItem(View.java:57)
+	at se.kth.iv1350.view.View.simulateSale(View.java:38)
+	at se.kth.iv1350.startup.Main.main(Main.java:27)
+

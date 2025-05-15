@@ -22,8 +22,8 @@ public class ControllerTest {
         InventoryManagement fakeInventory = new InventoryManagement() {
             @Override
             public ItemDTO fetchItem(String itemID, String employeeID) throws ItemNotFoundException {
-                if (itemID.equals("abc123")) {
-                    return new ItemDTO("abc123", "Milk", 10f, 0.06f, "Desc");
+                if (itemID.equals("arla123")) {
+                    return new ItemDTO("arla123", "Milk", 10f, 0.06f, "Desc");
                 } else if (itemID.equals("fail")) {
                     throw new DatabaseFailureException(itemID);
                 } else {
@@ -52,8 +52,8 @@ public class ControllerTest {
 
     @Test
     void testRegisterItemSuccess() throws Exception {
-        ItemDTO item = controller.registerItem("abc123", 2);
-        assertEquals("abc123", item.getItemID());
+        ItemDTO item = controller.registerItem("arla123", 2);
+        assertEquals("arla123", item.getItemID());
     }
 
     @Test
@@ -72,14 +72,14 @@ public class ControllerTest {
 
     @Test
     void testPaymentReturnsCorrectChangeWithoutDiscount() throws Exception {
-        controller.registerItem("abc123", 1);
+        controller.registerItem("arla123", 1);
         float change = controller.payment(50f);
         assertEquals(40f, change, 0.01f);
     }
 
     @Test
     void testRequestDiscountAppliesDiscountCorrectly() throws Exception {
-        controller.registerItem("abc123", 1);
+        controller.registerItem("arla123", 1);
         controller.requestDiscount(1);
 
         float change = controller.payment(50f);

@@ -20,6 +20,8 @@ public class InventoryManagement {
      * @param itemID The identifier for the item.
      * @param employeeID The identifier for the employee.
      * @return Information about the item.
+     * @throws ItemNotFoundException if the item with the specified ID is not found in the inventory.
+     * @throws DatabaseFailureException if there is a failure in the database while fetching item information.
      */
     public ItemDTO fetchItem(String itemID, String employeeID) throws ItemNotFoundException {
 

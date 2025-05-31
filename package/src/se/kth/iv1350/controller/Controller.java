@@ -75,8 +75,7 @@ public class Controller {
     }
 
     /**
-     * Registers payment for the sale, generates and prints the receipt,
-     * and updates all external systems.
+     * Registers payment for the sale, generates and prints the receipt,and updates all external systems.
      *
      * @param amountPaid The amount paid by the customer.
      * @return The change to give back to the customer.

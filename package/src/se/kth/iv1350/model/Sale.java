@@ -72,7 +72,14 @@ public class Sale {
     public Payment getPayment() {
         return payment;
     }
-
+    
+    /**
+     * Generates a receipt for the completed sale.
+     *
+     * @return A ReceiptDTO containing all sale details.
+     * @throws IllegalStateException if called before payment has been registered.
+     */
+    
     public ReceiptDTO generateReceipt() {
         if (payment == null) {
             throw new IllegalStateException("Cannot generate receipt without payment.");

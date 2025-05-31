@@ -38,7 +38,6 @@ public class Controller {
     }
 
     /**
-
      * Registers an item by fetching it from inventory and adding it to the current sale.
      *
      * @param itemID The ID of the item to register.

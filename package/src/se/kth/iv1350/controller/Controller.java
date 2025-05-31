@@ -43,7 +43,7 @@ public class Controller {
      * @param itemID The ID of the item to register.
      * @param quantity The quantity of the item.
      * @return The item that was registered.
-     * @throws ItemNotFoundException if the item could not be found in the inventory.,
+     * @throws ItemNotFoundException if the item could not be found in the inventory.
      * @throws DatabaseFailureException if there is an issue with the database when fetching the item.*/
     
     public ItemDTO registerItem(String itemID, int quantity)
